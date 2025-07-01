@@ -1,0 +1,54 @@
+# Bytecode and Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Package metadata
+*.egg-info/
+dist/
+build/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+.cache
+.pytest_cache/
+__pycache__/
+
+# MyPy / type checking
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# VS Code / JetBrains / other editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables / secrets
+.env
+.env.*
+.creds
+.creds.*
+creds.json
+wallet/
+instantclient*/
+
+# OS files
+.DS_Store
+Thumbs.db
