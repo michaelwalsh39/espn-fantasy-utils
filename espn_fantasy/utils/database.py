@@ -43,9 +43,16 @@ def create_engine() -> sa.engine :
     return engine
 
 
-def read_oracle_query(query: str, engine: sa.engine) -> pd.DataFrame :
+def read_oracle_query(query: str, engine: sa.engine, **kwargs) -> pd.DataFrame :
     df = pd.read_sql(
-        query, engine
+        query, engine, params=kwargs
     )
 
     return df
+
+
+def read_sql_file(filename):
+    base_dir = pathlib.Path.cwd()
+
+    with open(f"{base_dir}/espn_fantasy/sql/queries/{filename}.sql", "r") as f:
+        return f.read()
